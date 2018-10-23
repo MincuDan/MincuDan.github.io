@@ -1,2 +1,2 @@
 # MincuDan.github.io
-Programe pentru telefon
+**Programe pentru** _telefon_
