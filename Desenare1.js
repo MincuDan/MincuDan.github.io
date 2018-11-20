@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").inneriHTML = "Logic version = 2018.11.20";
+document.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.20";
 
 
 var canvas = document.getElementById("id_canvas");
