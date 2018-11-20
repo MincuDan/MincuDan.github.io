@@ -12,7 +12,7 @@ function on_thuch(e)
 	{
 		var context = canvas.getContext("2d");
 		context.beginPath();
-		context.arc(e.changedTouches.item(i).pageX - rect . jeft, e.changedTouches.item(i).pageY - rect . jeft,
+		context.arc(e.changedTouches.item(i).pageX - rect . left, e.changedTouches.item(i).pageY - rect . right,
 		20,
 		0, 2 * Math.PI
 		);
