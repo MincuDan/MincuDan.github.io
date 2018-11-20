@@ -9,6 +9,7 @@ var  rect = canvas.getBoundingClientRect();
 
 function on_thuch(e)
 {
+	e.preventDefault
 	for (var i = 0; i < e.changedTouches.length; i++);
 	{
 		var context = canvas.getContext("2d");
