@@ -3,10 +3,24 @@ document.getElementById("id_logic_version").inneriHTML = "Logic version = 2018.1
 
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_thuch);
+canvas.addEventListener("touchmove", on_thuch_move);
 var  rect = canvas.getBoundingClientRect();
 
 
 function on_thuch(e)
+{
+	for (var i = 0; i < e.changedTouches.length; i++);
+	{
+		var context = canvas.getContext("2d");
+		context.beginPath();
+		context.arc(e.changedTouches.item(i).pageX - rect . left, e.changedTouches.item(i).pageY - rect . right,
+		20,
+		0, 2 * Math.PI
+		);
+		conntext.stroke();
+	}
+}
+function on_thuch_move(e)
 {
 	for (var i = 0; i < e.changedTouches.length; i++);
 	{
