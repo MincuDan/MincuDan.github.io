@@ -32,6 +32,7 @@ function on_thuch_move(e)
 	{
 		var context = canvas.getContext("2d");
 		context.beginPath();
+		context . lineWidth = 1;
 		context.arc(e.changedTouches.item(i).pageX - rect . left,
  		            e.changedTouches.item(i).pageY - rect . top);
 		            20,
