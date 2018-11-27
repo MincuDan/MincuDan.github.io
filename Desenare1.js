@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.20.5";
+document.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.20.6";
 
 
 var canvas = document.getElementById("id_canvas");
@@ -17,8 +17,8 @@ function on_thuch(e)
 		var context = canvas.getContext("2d");
 		context.beginPath();
 		context.arc(e.changedTouches.item(i).pageX - rect . left, e.changedTouches.item(i).pageY - rect . right)
-		20,
-		0, 2 * Math.PI
+		10,
+		0, 1 * Math.PI
 		);
 		context.stroke();
 		lastX = e.changedTouches.item(i).pageX
