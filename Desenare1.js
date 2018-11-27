@@ -35,10 +35,10 @@ function on_thuch_move(e)
 		context . lineWidth = 1;
 		context.arc(e.changedTouches.item(i).pageX - rect . left,
  		            e.changedTouches.item(i).pageY - rect . top);
-		            20,
+		            10,
 		            0, 2 * Math.PI
 		            );
-					context . lineWidth = 40;
+					context . lineWidth = 20;
 		            context.moveTo(lastX - rect.left, lastY - rect.right )
 		            context.linneTo(e.changedTouches.item(i).pageX - rect . left,
  		                e.changedTouches.item(i).pageY - rect . top);
