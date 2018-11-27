@@ -8,7 +8,7 @@ var  rect = canvas.getBoundingClientRect();
 //--------------------------------------------------
 //var lastX = 0;
 //var lastY = 0;
-var last_position = (x: 0, y: 0 id: 0);
+var last_position = {x: 0, y: 0 id: 0};
 
 var last_position_array = [];
 
