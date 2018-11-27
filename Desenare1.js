@@ -20,7 +20,7 @@ function on_thuch(e)
 		20,
 		0, 2 * Math.PI
 		);
-		conntext.stroke();
+		context.stroke();
 		lastX = e.changedTouches.item(i).pageX
 		lastY = e.changedTouches.item(i).pageY
 	}
@@ -45,6 +45,6 @@ function on_thuch_move(e)
 		
 		lastX = e.changedTouches.item(i).pageX
 		lastY = e.changedTouches.item(i).pageY
-		conntext.stroke();
+		context.stroke();
 	}
 }
