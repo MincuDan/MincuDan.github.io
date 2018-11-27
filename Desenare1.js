@@ -14,7 +14,7 @@ var last_position_array = [];
 
 function on_thuch(e)
 {
-	e.prevedocument.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.20.4";
+	e.prevedocument.getElementById("id_logic_version").innerHTML = "Logic version = 2018.11.20.5";
 
 
 var canvas = document.getElementById("id_canvas");
