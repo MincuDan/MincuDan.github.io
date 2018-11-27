@@ -38,6 +38,9 @@ function on_thuch_move(e)
 		            10,
 		            0, 2 * Math.PI
 		            );
+		context.stroke();
+		
+		context.Begin.Path();
 					context . lineWidth = 20;
 		            context.moveTo(lastX - rect.left, lastY - rect.right )
 		            context.linneTo(e.changedTouches.item(i).pageX - rect . left,
