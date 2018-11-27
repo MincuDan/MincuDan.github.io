@@ -8,7 +8,7 @@ var  rect = canvas.getBoundingClientRect();
 //--------------------------------------------------
 //var lastX = 0;
 //var lastY = 0;
-var last_position = {x: 0, y: 0 id: 0};
+
 
 var last_position_array = [];
 
@@ -19,11 +19,13 @@ function on_thuch(e)
 	{
 		var context = canvas.getContext("2d");
 		context.beginPath();
+		context.lineWidth = 1;
 		context.arc(e.changedTouches.item(i).pageX - rect . left, e.changedTouches.item(i).pageY - rect . right)
 		10,
 		0, 2 * Math.PI
 		);
 		context.stroke();
+		var last_position = {x: 0, y: 0 id: 0};
 		last_position.x = e.changedTouches.item(i).pageX
 		last_position.y = e.changedTouches.item(i).pageY
 		last_position.id = e.changedTouches.item(i).identifier;
@@ -62,3 +64,21 @@ function on_thuch_move(e)
 		context.stroke();
 	}
 }
+//--------------------------
+function on_thuch_end(e)
+{
+	for (var i = 0; i < e.changedTouches.length; i++);
+	var j= 0;
+	for (; j <last_position_array.length; j++)
+		if (last_position_array[j].id == e.changedTouches.item(i).identifier)
+							break;
+	last_position_array_splice{j, 1};
+    }
+}
+//-------------------------
+
+
+
+
+
+
