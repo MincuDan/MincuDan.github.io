@@ -30,9 +30,3 @@ document.getElementById("id_x1").value = x1_re + "+"" "+ x1_im + "i"";"
 document.getElementById("id_x2").value = x2_re + "+" x2_im + "i"";"
 
 }
-
-
-
-
-
-
