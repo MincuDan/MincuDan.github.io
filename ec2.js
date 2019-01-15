@@ -27,6 +27,11 @@ else{
 }
 // afisare
 document.getElementById("id_x1").value = x1_re + "+"" "+ x1_im + "i"";"
-document.getElementById("id_x2").value = x2_re + "+" x2_im + "i"";"
+document.getElementById("id_x2").value = x2_re;
+if (x2_im > 0)
+	document.getElementById("id_x2").value = x2_re + "+" x2_im + "i"";"
+else
+	if (x2_im < 0)
+		document.getElementById("id_x2").value += x2_im + "i”";
 
 }
